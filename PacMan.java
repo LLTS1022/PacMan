@@ -137,11 +137,20 @@ public class PacMan extends JPanel implements ActionListener, KeyListener {
         pinkGhostImage = new ImageIcon(getClass().getResource("./pinkGhost.png")).getImage();
         redGhostImage = new ImageIcon(getClass().getResource("./redGhost.png")).getImage();
 
-        pacmanUpImage = new ImageIcon(getClass().getResource("./pacmanUp.png")).getImage();
-        pacmanDownImage = new ImageIcon(getClass().getResource("./pacmanDown.png")).getImage();
-        pacmanLeftImage = new ImageIcon(getClass().getResource("./pacmanLeft.png")).getImage();
-        pacmanRightImage = new ImageIcon(getClass().getResource("./pacmanRight.png")).getImage();
+       // pacmanUpImage = new ImageIcon(getClass().getResource("./pacmanUp.png")).getImage();
+        //pacmanDownImage = new ImageIcon(getClass().getResource("./pacmanDown.png")).getImage();
+       // pacmanLeftImage = new ImageIcon(getClass().getResource("./pacmanLeft.png")).getImage();
+       // pacmanRightImage = new ImageIcon(getClass().getResource("./pacmanRight.png")).getImage();
 
+         pacmanUpImage = new ImageIcon(getClass().getResource("./IMG_4988.JPG")).getImage();
+         pacmanDownImage = new ImageIcon(getClass().getResource("./IMG_4988.JPG")).getImage();
+         pacmanLeftImage = new ImageIcon(getClass().getResource("./IMG_4988.JPG")).getImage();
+         pacmanRightImage = new ImageIcon(getClass().getResource("./IMG_4988.JPG")).getImage();
+
+
+
+
+        
         loadMap();
         for (Block ghost : ghosts) {
             char newDirection = directions[random.nextInt(4)];
